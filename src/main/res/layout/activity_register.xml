@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+<ImageView
+    android:id="@+id/Im_view_huawei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/huawei"
+    app:layout_constraintTop_toBottomOf="@id/tv_reg_tips"
+    app:layout_constraintLeft_toLeftOf="@id/tv_reg_tips"
+    app:layout_constraintRight_toRightOf="@id/tv_reg_tips"
+    />
+    <TextView
+        android:id="@+id/tv_reg_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="请注册下列信息🫡"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/summer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/Im_view_huawei"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_reg_username"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:hint="账号"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Im_view_huawei"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        tools:ignore="MissingConstraints" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/summer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:errorTextAppearance="@style/error"
+        app:errorEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summer3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_password1"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:hint="请输入密码"
+            android:textSize="17dp"
+            app:layout_constraintLeft_toLeftOf="@id/summer3"
+            app:layout_constraintTop_toBottomOf="@id/summer3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/summer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:errorTextAppearance="@style/error"
+        app:errorEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summer4">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_reg_password2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:hint="请再次输入密码"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/summer4"
+        app:layout_constraintLeft_toLeftOf="@id/summer4"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存并退出"
+        app:layout_constraintTop_toBottomOf="@id/summer5"
+        app:layout_constraintRight_toRightOf="@id/summer5"
+        app:layout_constraintLeft_toLeftOf="@id/summer5"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="如果账号未点击保存，则注册失败"
+        app:layout_constraintTop_toBottomOf="@id/Button4"
+        app:layout_constraintLeft_toLeftOf="@id/summer5"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
